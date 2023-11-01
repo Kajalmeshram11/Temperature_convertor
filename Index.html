@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="Temp.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <div class="input-container">
+            <label for="inputScale">Input Scale:</label>
+            <select id="inputScale">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+                <option value="R">Rankine</option>
+                <option value="RE">Réaumur</option>
+            </select>
+        </div>
+        <div class="input-container">
+            <label for="outputScale">Output Scale:</label>
+            <select id="outputScale">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+                <option value="R">Rankine</option>
+                <option value="RE">Réaumur</option>
+            </select>
+        </div>
+        <div class="input-container temp">
+            <label for="temperature">Temperature:</label>
+            <input type="number" id="temperature" placeholder="Enter temperature">
+        </div>
+        <button id="convertButton">Convert</button>
+        <p id="result">Result: </p>
+    </div>
+</div>
+    <script src="Temp.js"></script>
+</body>
+</html>
